@@ -33,7 +33,7 @@ const server = http.createServer((req, res) => {
   let filePath = path.join(
     __dirname,
     'public',
-    res.url === '/' ? 'index.html' : req.url
+    req.url === '/' ? 'index.html' : req.url
   );
 
   // console.log(res.url);
